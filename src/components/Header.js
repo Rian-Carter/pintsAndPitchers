@@ -1,8 +1,12 @@
 import React from 'react';
+import kegImage from "./../img/kegs.png";
 
 function Header(){
   return(
-    <h1>Taps & Pints</h1>
+    <React.Fragment>
+      <h1>Pints & Pitchers</h1>
+      <img src={kegImage} alt="An image of kegs" />
+    </React.Fragment>
   );
 }
 
