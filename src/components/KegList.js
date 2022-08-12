@@ -22,14 +22,14 @@ const mainKegList = [
 function KegList(){
   return (
     <React.Fragment>
-      <Keg 
-        location="Portalnd, OR"
-        beer="Wanderlust"
-        status="Kegs are running low"/>
-      <Keg
-        location="Bend, OR"
-        beer="Johnny Utah"
-        status="Topped Up"/>
+      <hr />
+      {mainKegList.map((keg, index) =>
+        <Keg
+          beer={keg.beer}
+          location={keg.location}
+          status={keg.status}
+          key={index}/>
+        )}
     </React.Fragment>
   );
 }
