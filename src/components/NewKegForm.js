@@ -10,7 +10,7 @@ function NewKegForm(props){
       name: event.target.name.value,
       origin: event.target.origin.value,
       price: event.target.price.value,
-      abv: event.target.price.value,
+      abv: event.target.abv.value,
       id: v4()
     })
   }
