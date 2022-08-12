@@ -29,7 +29,7 @@ function KegList(){
           location={keg.location}
           status={keg.status}
           key={index}/>
-        )}
+      )}
     </React.Fragment>
   );
 }
