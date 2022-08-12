@@ -3,19 +3,22 @@ import Keg from './Keg';
 
 const mainKegList = [
   {
-    beer: 'Wanderlust',
-    location: 'Portland, OR',
-    status: '50%'
+    name: 'Wanderlust',
+    origin: 'Portland, OR',
+    price: '$6.50',
+    abv: '6.5%'
   },
   {
-    beer: 'Johnny Utah',
-    location: 'Bend, OR',
-    status: '73%'
+    name: 'Johnny Utah',
+    origin: 'Bend, OR',
+    price: '$6.50',
+    abv: '5.5%'
   },
   {
-    beer: 'Belching Beaver',
-    location: 'Seattle, WA',
-    status: '24%'
+    name: 'Belching Beaver',
+    origin: 'Seattle, WA',
+    price: '$6.50',
+    abv: '3.7%'
   }
 ];
 
@@ -25,9 +28,10 @@ function KegList(){
       <hr />
       {mainKegList.map((keg, index) =>
         <Keg
-          beer={keg.beer}
-          location={keg.location}
-          status={keg.status}
+          name={keg.name}
+          origin={keg.origin}
+          price={keg.price}
+          abv={keg.abv}
           key={index}/>
       )}
     </React.Fragment>
