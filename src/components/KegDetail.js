@@ -7,11 +7,11 @@ function KegDetail(props){
   return (
     <React.Fragment>
       <h1>Keg Detail</h1>
-      <h3>{keg.name} - {keg.origin} - {keg.price}</h3>
+      <h3>{keg.name} - {keg.origin}</h3>
       <p><em>{keg.abv}%</em></p>
       <p><em>${keg.price} per keg</em></p>
       <h1>Availability: {""}
-      {keg.qunatity > 0 ? keg.quantity + " barrel" : "Out of Stock"}
+      {keg.quantity > 0 ? keg.quantity + " kegs" : "Out of Stock"}
       </h1>
       <button onClick={ props.onClickingEdit }>Update Keg</button>
       <button onClick={()=> onClickingDelete(keg.id) }>Delete Keg</button>
