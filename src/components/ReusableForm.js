@@ -9,18 +9,22 @@ function ReusableForm(props) {
           type='text'
           name='name'
           placeholder='Name' />
+          <br></br>
         <input
           type='text'
           name='origin'
           placeholder='Origin' />
+          <br></br>
         <input
           type='text'
           name='price'
           placeholder='Price' />
+          <br></br>
         <input
           type='text'
           name='abv'
           placeholder='%5.5' />
+          <br></br>
         <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>

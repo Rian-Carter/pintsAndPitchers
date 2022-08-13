@@ -10,10 +10,11 @@ function NewKegForm(props){
     props.onNewKegCreation({
       name: event.target.name.value,
       origin: event.target.origin.value,
-      price: event.target.price.value,
+      price: parseInt(event.target.price.value),
       abv: event.target.abv.value,
+      quantity: parseInt(130),
       id: v4()
-    })
+    });
   }
 
   return (
