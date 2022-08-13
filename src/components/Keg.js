@@ -18,7 +18,6 @@ Keg.propTypes = {
   origin: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   abv: PropTypes.string.isRequired,
-  // quantity: PropTypes.string.isRequired,
   id: PropTypes.string,
   whenKegClicked: PropTypes.func
 };
