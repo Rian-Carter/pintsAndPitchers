@@ -23,7 +23,7 @@ function ReusableForm(props) {
         <input
           type='text'
           name='abv'
-          placeholder='%5.5' />
+          placeholder='5.5' />
           <br></br>
         <button type='submit'>{props.buttonText}</button>
       </form>
